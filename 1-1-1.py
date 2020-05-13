@@ -6,7 +6,7 @@ Created on Sat Nov 10 12:18:14 2018
 """
 
 class  LNode:  
-    def  __new__(self,x):  
+    def  __init__(self,x):  
         self.data=x  
         self.next=None  
 
@@ -14,9 +14,7 @@ class  LNode:
 def  Reverse(head): 
     # 判断链表是否为空
     if  head == None or head.next == None:
-
-
-		return
+        return None
     pre = None  #前驱结点
     cur = None  # 当前结点
     next = None # 后继结点
@@ -31,7 +29,7 @@ def  Reverse(head):
         next = cur.next
         cur.next = pre
         pre = cur
-        cur = cur.next
+        #cur = cur.next
         cur = next
     #链表最后一个结点指向倒数第二个结点
     cur.next = pre
@@ -41,26 +39,25 @@ def  Reverse(head):
 if  __name__=="__main__":
     i = 1
 	#链表头结点
-    head = LNode()
+    head = LNode(0)
     head.next = None
     tmp = None
     cur = head
 	#构造单链表
     while  i<8:
-        tmp = LNode()
-        tmp.data = i
-        tmp.next = None
+        tmp = LNode(i)
+
         cur.next = tmp
         cur = tmp
         i +=1	
-    print  "逆序前：",
+    print("逆序前：")
     cur = head.next
     while  cur != None:
-        print  cur.data,
+        print(cur.data)        
         cur = cur.next
-    print  "\n逆序后：",
+    print("\n逆序后：")
     Reverse(head)
     cur = head.next
     while  cur != None:
-         print  cur.data,
+         print(cur.data)
          cur = cur.next

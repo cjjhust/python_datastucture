@@ -32,7 +32,8 @@ class  Test:
             i +=1
         i=0
         while  i<lens:
-            s[(i + 1) *2] = list(strs)
+            s[i *2+1] = list(strs)[i]
+            #s[(i+1)*2]=list(strs)[i]
             i +=1
         self.center=-1
         self.palindromeLen = -1
@@ -44,7 +45,7 @@ class  Test:
             else:    # 对应图中第（4）种情况
                 p[i] = 1
             # 然后接着向左右两边扩展求最长的回文子串
-            while  i + p[i]<newLen and i - p[i]>0 and s[i - p[i]] == s[i + p[i]]:
+            while  i + p[i]<newLen and i - p[i]>=0 and s[i - p[i]] == s[i + p[i]]:
                 p[i] +=1
             # 当前求出的回文字符串最右端的下标更大
             if  i + p[i] > id+p[id]:
@@ -54,6 +55,9 @@ class  Test:
                 self.center=(i+1)/2-1
                 self.palindromeLen = p[i] - 1	# 更新最长回文子串的长度
             i +=1
+        print(s,end='')
+        print()
+        print(p,end='')
 			
 if  __name__=="__main__":
     strs="abcbax"
@@ -62,18 +66,18 @@ if  __name__=="__main__":
     center=t.getCenter()
     palindromeLen=t.getLen()
     if  center!=-1 and palindromeLen!=-1:
-        print  "最长的回文子串为：",
+        print("最长的回文子串为：")
         # 回文字符串长度为奇数
         if  palindromeLen % 2 ==1:
-            i=center-palindromeLen/2
-            while  i<=center+palindromeLen/2:
-                print  list(strs)[i],
+            i=center-int(palindromeLen/2)
+            while  i<=center+int(palindromeLen/2):
+                print(list(strs)[int(i)],end="")
                 i +=1
         # 回文字符串长度为偶数
         else:
-            i=center-palindromeLen/2
-            while  i<center+palindromeLen/2:
-                print  list(strs)[i],
+            i=int(center-palindromeLen/2)+1
+            while  i<int(center+palindromeLen/2)+1:
+                print(list(strs)[int(i)],end="")
                 i +=1
     else:
-        print  "查找失败"
+        print("查找失败")

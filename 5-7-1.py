@@ -26,12 +26,13 @@ def  removeNestedPare(strs):
         i +=1
     # 判断括号是否匹配
     if  Parentheses_num !=0:
-        print  "由于括号不匹配，因此不做任何操作"
+        print("由于括号不匹配，因此不做任何操作")
         return  None
     # 处理字符串结尾的")"
     sb=sb+')'
     return  sb
 
 if  __name__=="__main__":
-    strs="(1,(2,3),(4,(5,6),7))"
-    print  strs+"去除嵌套括号后为："+removeNestedPare(strs)
+    #strs="(1,(2,3),(4,(5,6),7))"
+    strs="(1())"
+    print (strs+"去除嵌套括号后为："+removeNestedPare(strs))

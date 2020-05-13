@@ -16,16 +16,19 @@ def  swap(str,i,j):
 输入参数：str为待排序的字符串，start为待排序的子字符串的首字符下标
 """
 def  Permutation(str,start):
+    #print("1str",str)
+    #print("1start",start)
     if  str==None or start<0: #书中两个等号之间有空白
         return  
     # 完成全排列后输出当前排列的字符串
     if  start==len(str)-1  :
-        print  ''.join(str),
+        print("result:"''.join(str))
     else: 
         i=start
         while  i<len(str):
             # 交换start与i所在位置的字符
             swap(str,start,i)
+            #print("start:",start,"i:",i,"str:",str)
             # 固定第一个字符，对剩余的字符进行全排列
             Permutation(str, start+1)
             # 还原start与i所在位置的字符

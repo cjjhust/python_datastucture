@@ -38,6 +38,7 @@ def  getNextPermutation(str):
         # 从后向前开始遍历字符串
         suc = cur  
         cur -=1
+        print("cur",cur,"suc",suc)
         if  str[cur] < str[suc]:
             # 相邻递增的字符，cur指向较小的字符
             # 找出cur后面最小的字符tmp  
@@ -45,9 +46,12 @@ def  getNextPermutation(str):
             while  str[tmp] < str[cur]:
                 tmp -=1
             # 交换cur与tmp
+            print("cur",cur,"tmp",tmp,"str",str)
             swap(str,cur ,tmp)
+            print("swap",cur,tmp,str)
             # 把cur后面的子字符串进行翻转
-            Reverse(str,suc , end)  
+            Reverse(str,suc , end)
+            print("suc",suc,"ssstr",str)  
             return  True  
     return  False
 
@@ -57,15 +61,15 @@ def  getNextPermutation(str):
 """
 def  Permutation (s):
     if  s==None or len(s)<1:
-        print  "参数不合法"
+        print("参数不合法")
         return
     str=list(s)
     str.sort() # 升序排列字符数组
-    print  str
-    print  ''.join(str),
+    print(str)
+    print(''.join(str))
     while  getNextPermutation(str):
-        print  ''.join(str), 
+        print(''.join(str))
 	
 if  __name__=="__main__":  #书中等号之间有空格
-    s = "abc"  
+    s = "12345"  
     Permutation(s)

@@ -42,12 +42,12 @@ def  insertSort(s,char_to_int):
         while  j >= 0:
             # 用给定的规则比较字符串的大小
             if  compare(temp,s[j],char_to_int) ==-1:
-                s[j+1] = s[j]  
+                s[j+1] = s[j]  #S1<S0,  S0 S0...
             else: 
                 break  
             j -=1
-        s[j+1] = temp 
-        i +=1
+        s[j+1] = temp #s1 S0 ...
+        i +=1 #
 	
 if  __name__=="__main__":
     s =["bed", "dog", "dear", "eye"]
@@ -63,5 +63,5 @@ if  __name__=="__main__":
     insertSort(s,char_to_int)
     i=0
     while  i<len(s):
-        print  s[i],
+        print(s[i])
         i +=1

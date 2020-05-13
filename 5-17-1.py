@@ -24,12 +24,14 @@ def  getLargestSub(src):
             j +=1
         k +=1
         i +=1
+    print("largestSub",largestSub)
     return  ''.join(largestSub[0:k])
 
 if  __name__=="__main__":
-    s = "acbdxmng"  
+    #s = "acbdxmng"
+    s="zysdcba"  
     result = getLargestSub(s)   
     if  result == None:
-        print  "字符串为空"
+        print("字符串为空")
     else:
-        print  result
+        print(result)

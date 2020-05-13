@@ -6,6 +6,7 @@ Created on Sat Nov 10 16:25:07 2018
 """
 
 def  MatrixChainOrder (p,i,j):
+    print("i,j",i,j)
     if  i == j:
         return  0
     mins = 2**32
@@ -15,15 +16,19 @@ def  MatrixChainOrder (p,i,j):
     """
     k=i
     while  k<j:
+        print("i k j ",i,k,j)
+        print("p[i-1]*p[k]*p[j]",[i-1],[k],[j])
         count = MatrixChainOrder (p, i, k) + \
         MatrixChainOrder (p, k+1, j) + \
         p[i-1]*p[k]*p[j]
+        print(i,k,j,"count",count)
         if  count < mins:
             mins = count
+            print("mins",mins)
         k +=1
     return  mins
 
 if  __name__=="__main__":
     arr=[1, 5, 2, 4, 6]
     n = len(arr)
-    print  "最少的乘法次数为 "+str(MatrixChainOrder(arr, 1, n-1))
+    print("最少的乘法次数为 "+str(MatrixChainOrder(arr, 1, n-1)))

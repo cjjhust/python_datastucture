@@ -29,28 +29,37 @@ def  isDuplicate(str,begin,end):
 输入参数：str为待排序的字符串，start为待排序的子字符串的首字符下标
 """
 def  Permutation(str,start):
+    #print("11str:",str)
+    #print("start:",start)
     if  str==None or start<0:
         return
     # 完成全排列后输出当前排列的字符串
     if  start==len(str)-1:
-        print  ''.join(str), 
+        print(''.join(str))
     else:
         i=start
         while  i<len(str):
             if  not isDuplicate(str , start,i):
+                #print("str:",str,"start:",start,"i:",i)
+                i+=1
                 continue
             # 交换start与i所在位置的字符
-            swap(str,start,i) 
+            #print("swap",str,"start",start,"i",i)
+            swap(str,start,i)
+           
             # 固定第一个字符，对剩余的字符进行全排列
             Permutation(str, start+1)
             # 还原start与i所在位置的字符
-            swap(str,start,i)  
+            #print("1swap",str,"start",start,"i",i)
+            swap(str,start,i)
+              
             i +=1
+            #print("iii",i)
 		
 def  Permutation_transe(s):
     str=list(s)
     Permutation(str,0)
 
 if  __name__=="__main__":
-    s = "aba"  
+    s = "abcabd"  
     Permutation_transe(s)  

@@ -25,7 +25,7 @@ def  getIntersection(s1,s2):
         elif  s1.getMax()<=s2.getMax():
             return  MySet(s2.getMin(),s1.getMax())
         else:
-				return  MySet(s2.getMin(),s2.getMax())            
+            return  MySet(s2.getMin(),s2.getMax())            
     elif  s1.getMin()<=s2.getMax():
         if  s1.getMax()<=s2.getMax():
             return  MySet(s1.getMin(),s1.getMax())
@@ -56,5 +56,5 @@ if  __name__=="__main__":
     result=getIntersection2(l1,l2)
     i=0
     while  i<len(result):
-        print  "["+str(result[i].getMin())+","+str(result[i].getMax()) + "] "
+        print("["+str(result[i].getMin())+","+str(result[i].getMax()) + "] ")
         i +=1

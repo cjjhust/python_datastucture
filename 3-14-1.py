@@ -34,16 +34,21 @@ class  DNSCache:
         level=0
         while  level<lens:
             # 根据当前遍历到的IP中的字符，找出子结点的索引
+            print("ip_lever",ip[level])
             index = getIndexFromChar(ip[level])
+            print("index",index)
             # 如果子结点不存在，则创建一个
             if  pCrawl.child[index] ==None:
                 pCrawl.child[index] = TrieNode()
             # 移动到子结点 */
             pCrawl = pCrawl.child[index]
+            print(index,"pchild_index",pCrawl.child[index],pCrawl)
             # 在叶子结点中存储IP对应的URL
             pCrawl.isLeaf = True
             pCrawl.url = url
+            print("pchild",pCrawl.url)
             level +=1
+        
     # 通过IP地址找到对应的URL
     def  searchDNSCache(self,ip):
         pCrawl = self.root
@@ -55,8 +60,11 @@ class  DNSCache:
             if  pCrawl.child[index] ==None:
                 return  None
             pCrawl = pCrawl.child[index]
+            print(level,"ppppchild",pCrawl.child[index])
+            print("pC",pCrawl)
             level +=1
         # 返回找到的URL
+        print("pC11111",pCrawl)
         if  pCrawl!=None and pCrawl.isLeaf:
             return  pCrawl.url
         return  None
@@ -72,6 +80,6 @@ if  __name__=="__main__":
     ip = "121.57.61.129"
     res_url = cache.searchDNSCache(ip)
     if  res_url != None:
-        print  "找到了IP对应的URL:\n"+ ip+"--->"+ res_url
+        print("找到了IP对应的URL:\n"+ ip+"--->"+ res_url)
     else:
-        print  "没有找到对应的URL\n"
+        print("没有找到对应的URL\n")

@@ -22,7 +22,7 @@ def  truncateStr(strs,lens):
             #print  sb,count
             if  (isChinese(cc)):
                 # 如果要求截取子串的长度只差1个或者2个字符，但是接下来的字符是中文，
-                #那么截取结果子串中不保存这个中文字符
+                #那么截取结果子串中不保存这个中文字符ex
                 if  count + 1 <= lens and count + 3 >lens :
                     return  sb
                 count = count + 3
@@ -36,5 +36,5 @@ def  truncateStr(strs,lens):
 
 if  __name__=="__main__":
     sb = "人ABC们DEF"
-    sb_unicode=unicode(sb,'utf8')  # 转成unicode编码
-    print  truncateStr(sb_unicode, 6)
+    #sb_unicode=sb.decode('utf8')  # 转成unicode编码
+    print(truncateStr(sb, 6))

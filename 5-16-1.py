@@ -30,6 +30,7 @@ class  CommonSubString:
             i +=1
         # 对后缀数组排序 
         suffixes.sort()
+        print("suffixes",suffixes)
         i=1
         while  i<n:
             tmp=self.maxPrefix(suffixes[i],suffixes[i-1])
@@ -42,4 +43,4 @@ class  CommonSubString:
 if  __name__=="__main__":
     txt = "banana"
     c=CommonSubString()
-    print  "最常的公共子串为："+c.getMaxCommonStr(txt)
+    print("最常的公共子串为："+c.getMaxCommonStr(txt))

@@ -31,6 +31,8 @@ class  Test:
         sums=lmax+rmax+root.data
         #以root为根的子树的和大于前面求出的最大值
         if  sums > self.maxSum:
+            
+            print("sums & maxSum:",sums,self.maxSum)
             self.maxSum=sums
             maxRoot.data=root.data
         # 返回以root为根结点的子树的所有结点的和
@@ -66,5 +68,5 @@ if  __name__=="__main__":
 
     maxRoot=BiTNode() # 最大子树的根结点
     test.findMaxSubTree(root,maxRoot)
-    print  "最大子树和为："+str(test.maxSum)
-    print  "对应子树的根结点为："+str(maxRoot.data)
+    print("最大子树和为："+str(test.maxSum))
+    print("对应子树的根结点为："+str(maxRoot.data))

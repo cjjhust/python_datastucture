@@ -36,10 +36,10 @@ def  isContain(str1,str2):
 
 if  __name__=="__main__":
     str1 = "abcdef"
-    str2 = "acf"
+    str2 = "aac"
     isContain = isContain(str1, str2)
-    print  str1 + "与" + str2,
+    print(str1 + "与" + str2)
     if  (isContain):
-        print  "有包含关系"
+        print("有包含关系")
     else:
-        print  "没有包含关系"
+        print("没有包含关系")

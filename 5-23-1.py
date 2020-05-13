@@ -31,20 +31,23 @@ def  shortestChainLen(start,target,D):
     item=QItem(start,1)
     Q.append(item)  # 把第一个字符串添加进来
     while  len(Q)>0:
-        curr =Q[0]
-        Q.pop()
+        #curr =Q[len(Q)-1]
+        #print(curr.word)
+        #Q.pop()
         for  it  in  D:
                 temp=it 
                 # 如果这两个字符串只有一个字符不同
-                if  isAdjacent(curr.word,temp):
-                    item.word = temp
-                    item.lens = curr.lens + 1
-                    Q.append(item)  # 把这个字符串放入到队列中
+                if  isAdjacent(Q[len(Q)-1].word,temp):
+                    cur=QItem(temp, Q[len(Q)-1].lens + 1)
+                    
+                    Q.append(cur)  # 把这个字符串放入到队列中
+                    #print(Q[len(Q)-1].word)
                     # 把这个字符串从队列中删除来避免被重复遍历
                     D.remove(temp)
                     # 通过转变后得到了目标字符
                     if  temp == target:
-                        return  item.lens
+                        for i in range(len(Q)):print("**",Q[i].word)
+                        return  Q[len(Q)-1].lens
     return  0
 
 if  __name__=="__main__": 
@@ -58,5 +61,5 @@ if  __name__=="__main__":
     D.append("poIN")
     start = "TooN"
     target = "pbca"
-    print  "最短的链条的长度为: "+str(shortestChainLen(start, target, D))
+    print("最短的链条的长度为: "+str(shortestChainLen(start, target, D)))
 

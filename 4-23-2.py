@@ -42,7 +42,8 @@ def  getIntersection(l1,l2):
                 result.append(MySet(s1.getMin(),s2.getMax()))
                 j +=1
         else:
-            j +=1    
+            j +=1 
+            print("j",j)   
     return  result
 
 if  __name__=="__main__":
@@ -54,5 +55,5 @@ if  __name__=="__main__":
     result=getIntersection(l1,l2)
     i=0
     while  i<len(result):
-        print  "["+str(result[i].getMin())+","+str(result[i].getMax()) + "] "
+        print("["+str(result[i].getMin())+","+str(result[i].getMax()) + "] ")
         i +=1

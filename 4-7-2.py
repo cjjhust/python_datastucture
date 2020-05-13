@@ -7,7 +7,7 @@ Created on Sat Nov 10 16:14:49 2018
 
 def  minDistance(arr,num1,num2):
     if  arr==None or len(arr)<=0:
-        print  "参数不合理"
+        print("参数不合理")
         return  2**32
     lastPos1 = -1 # 上次遍历到num1的位置
     lastPos2 = -1  # 上次遍历到num2的位置
@@ -26,8 +26,8 @@ def  minDistance(arr,num1,num2):
     return  minDis
 
 if  __name__=="__main__":
-    arr=[4, 5, 6, 4, 7, 4, 6, 4, 7, 8, 5, 6, 4, 3, 10, 8]
+    arr=[4, 5, 6, 8, 4, 7, 4, 6, 4, 7,  5, 6, 4, 3, 10, 8]
     num1=4
     num2=8
-    print  minDistance(arr,num1,num2)
+    print(minDistance(arr,num1,num2))
 

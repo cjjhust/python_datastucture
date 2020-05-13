@@ -31,9 +31,9 @@ def  getMaxSubStr(s1,s2):
                 else:
                     tmpMaxLen = 0
             j +=1
-        if  tmpMaxLen > maxLen:
-            maxLen = tmpMaxLen
-            maxLenEnd1 = s1begin + j
+        #if  tmpMaxLen > maxLen:
+            #maxLen = tmpMaxLen
+            #maxLenEnd1 = s1begin + j
         i +=1
     i = maxLenEnd1 - maxLen
     while  i < maxLenEnd1:
@@ -44,4 +44,4 @@ def  getMaxSubStr(s1,s2):
 if  __name__=="__main__":
     str1 = "abccade"
     str2 = "dgcadde"
-    print  getMaxSubStr(str1, str2)
+    print(getMaxSubStr(str1, str2))

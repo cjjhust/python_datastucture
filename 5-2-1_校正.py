@@ -9,6 +9,7 @@ Created on Sat Nov 10 16:34:42 2018
 方法功能：获取两个字符串的最长公共字串 
 输入参数：str1和str2为指向字符的指针
 """
+import pprint
 def  getMaxSubStr(str1,str2):
     len1 =len(str1)
     len2 =len(str2)
@@ -25,6 +26,8 @@ def  getMaxSubStr(str1,str2):
     while  j<len2+1:
         M[0][j] = 0
         j +=1       
+    
+    
     # 通过利用递归公式填写新建的二维数组（公共字串的长度信息）
     i=1
     while  i<len1 + 1:       
@@ -39,6 +42,10 @@ def  getMaxSubStr(str1,str2):
                 M[i][j] = 0
             j +=1
         i +=1
+    for i in range(len1+1):
+        for j in range(len2+1):
+            print(M[i][j],end="\t")
+        print()
     # 找出公共字串
     i=maxI- maxs
     while  i<maxI:
@@ -49,4 +56,4 @@ def  getMaxSubStr(str1,str2):
 if  __name__=="__main__": #书中等号之间有空格
     str1 = "abccade"
     str2 = "dgcadde"
-    print  getMaxSubStr(str1, str2)
+    print(getMaxSubStr(str1, str2))

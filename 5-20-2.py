@@ -22,24 +22,33 @@ def  getMinPath(arr) :
         cache[j][0] = cache[j-1][0] + arr[j][0]
         j +=1        
     # 在遍历二维数组的过程中不断把计算结果保存到cache中
-    print"路径:",
+    print("路径:")
     i=1
+    
+        
     while  i<row:
         j=1
-        while  j<col:
+        while j<col:
             # 可以确定选择的路线为arr[i][j-1]
             if  cache[i-1][j] > cache[i][j-1]:
                 cache[i][j] = cache[i][j-1] + arr[i][j]
-                print  "["+str(i)+","+str(j-1)+"]  ",
+                print("["+str(i)+","+str(j-1)+"]  ")
+
             #可以确定选择的路线为arr[i-1][j]
             else:
                 cache[i][j] = cache[i-1][j] + arr[i][j]
-                print  "["+str(i-1)+","+str(j)+"]  ",
-            j +=1
-        i +=1 
-    print("["+str(row-1)+","+str(col-1)+"]")
+                print("["+str(i-1)+","+str(j)+"]  ")
+            j+=1
+        i+=1
+    print("***["+str(row-1)+","+str(col-1)+"]")
+    for i in range(len(cache)):
+        for j in range(len(cache[0])):
+            print(cache[i][j],end="\t")
+        print()
+
     return  "最小值为："+str(cache[row-1][col-1])
 
 if  __name__=="__main__":
-    arr =[[1, 4, 3],[8, 7, 5],[2, 1, 5]] 
-    print  getMinPath(arr)
+    #arr =[[1, 4, 3],[8, 7, 5],[2, 1, 5]]
+    arr =[[1, 4, 3,5],[1,1, 7, 5],[10,1, 5, 5],[1,1,5,9],[1,5,5,9],[1,1,1,9]] 
+    print(getMinPath(arr))

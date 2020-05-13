@@ -16,13 +16,17 @@ def  getMaxAscendingLen(strs):
         maxLen[i]=1 # maxLen[i]的最小值为1；
         j=0
         while  j<i:
-            if  list(strs)[j] < list(strs)[i] and maxLen[j] > maxLen[i]-1:
+            if  list(strs)[j] < list(strs)[i]:
                 maxLen[i]=maxLen[j]+1
                 maxAscendingLen=maxLen[i]
+            else:
+                maxLen[i]=1
             j +=1
         i +=1
+    print("maxLen",maxLen)
     return  maxAscendingLen
 
 if  __name__=="__main__":
-    s = "xbcdza"
-print  "最长递增子序列的长度为："+ str(getMaxAscendingLen(s))
+    #s = "acbdza"
+    s="xbcdza"
+print("最长递增子序列的长度为："+ str(getMaxAscendingLen(s)))

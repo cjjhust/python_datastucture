@@ -7,7 +7,7 @@ Created on Sat Nov 10 17:15:13 2018
 
 def  getRelativePath(path1,path2):
     if  path1 == None  or path2 == None:
-        print  "参数不合法\n"
+        print("参数不合法\n")
         return  
     relativePath = ""
     # 用来指向两个路径中不同目录的起始路径
@@ -23,6 +23,7 @@ def  getRelativePath(path1,path2):
             if  list(path1)[i] == '/':
                 diff1 = i
                 diff2 = j
+                print("diff1",diff1,"diff2",diff2)
             i +=1
             j +=1
         else:
@@ -34,6 +35,7 @@ def  getRelativePath(path1,path2):
                 if  list(path1)[diff1] == '/':
                     relativePath+="../"
                 diff1 +=1
+                print("*diff1",diff1,"diff2",diff2)
             # 把path2的非公共部分的路径加到后面
             diff2 +=1
             relativePath += path2[diff2:]
@@ -43,4 +45,4 @@ def  getRelativePath(path1,path2):
 if  __name__=="__main__":
     path1 = "/qihoo/app/a/b/c/d/new.c"
     path2 = "/qihoo/app/1/2/test.c"
-    print  getRelativePath(path1,path2)
+    print(getRelativePath(path1,path2))

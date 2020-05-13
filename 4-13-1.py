@@ -6,10 +6,11 @@ Created on Sat Nov 10 16:19:40 2018
 """
 
 class  Test:
-     def  __new__(self):  
+     def  __init__(self):  
         self.pos=0  
      # 以arr[low]为基准把数组分成两部分 
      def  partition (self,arr,low,high):
+        print("self",arr[low:high+1])
         key = arr[low]
         while  low < high:
             while  low < high and arr[high] > key:
@@ -20,15 +21,18 @@ class  Test:
             arr[high] = arr[low]
         arr[low] = key
         self.pos = low
+        print("pos",self.pos)
 
      def  getMid(self,arr):
         low = 0
         n=len(arr)
         high = n - 1
-        mid = (low + high) / 2
+        mid =int((low + high) / 2) 
+        print("mid",mid)
         while  True:
             # 以arr[low]为基准把数组分成两部分 
             self.partition(arr, low, high)
+            print("arr",arr)
             if  self.pos == mid: # 找到中位数
                 break
             elif  self.pos>mid:  # 继续在右半部分查找
@@ -40,4 +44,4 @@ class  Test:
 
 if  __name__=="__main__":
     arr=[ 7, 5, 3, 1, 11, 9]
-    print  Test().getMid(arr)
+    print(Test().getMid(arr))

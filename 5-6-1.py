@@ -12,7 +12,7 @@ def  ReverseArray(ch):
     end = lens -1
     while  begin < end:
         # 正向遍历找到下一个大写字母
-        while  ch[begin]>='a' and  ch[end]<='z' and end > begin:
+        while  ch[begin]>='a' and  ch[begin]<='z' and end > begin:
             begin +=1  
         # 逆向遍历找到下一个小写字母
         while  ch[end]>='A' and ch[end]<='Z' and end > begin:
@@ -22,9 +22,9 @@ def  ReverseArray(ch):
         ch[end] = temp
 		
 if  __name__=="__main__":
-    ch=list("AbcDef")
+    ch=list("AbcDeD")
     ReverseArray(ch)
     i=0
     while  i<len(ch):
-        print  ch[i],
+        print(ch[i],end='')
         i +=1

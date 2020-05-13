@@ -26,7 +26,7 @@ class  Stack:
         if  len(self.items)>0:
             return  self.items.pop()  
         else:
-            print  "栈已经为空"
+            print("栈已经为空")
 
             return  None
     # 压栈
@@ -44,7 +44,7 @@ class  MyStack :
         if  self.minStack.empty():
             self.minStack.push(data)
         else:
-            if  data < self.minStack.peek():
+            if  data <= self.minStack.peek():
                 self.minStack.push(data)   
     def  pop(self):
         topData = self.elemStack.peek()
@@ -61,10 +61,17 @@ class  MyStack :
 if  __name__=="__main__":
     stack = MyStack()
     stack.push(5)
-    print  "栈中最小值为：" + str(stack.mins())
+    print("栈中最小值为：" + str(stack.mins()))
     stack.push(6)
-    print  "栈中最小值为：" + str(stack.mins())
+    print("栈中最小值为：" + str(stack.mins()))
     stack.push(2)
-    print  "栈中最小值为：" + str(stack.mins())
+    print("栈中最小值为：" + str(stack.mins()))
+    stack.push(2)
+    print("栈中最小值为：" + str(stack.mins()))
     stack.pop()
-    print  "栈中最小值为：" + str(stack.mins())
+    stack.push(1)
+    stack.push(1)
+    print(stack.elemStack.peek())
+    print("栈中最小值为：" + str(stack.mins()))
+    stack.pop()
+    print("栈中最小值为：" + str(stack.mins()))

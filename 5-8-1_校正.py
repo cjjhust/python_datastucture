@@ -20,7 +20,7 @@ class  Test:
         if  length > 1:
             if  not self.isNumber(list(strs)[length - 1]):
                 # 不是数字
-                print  "不是数字"
+                print("不是数字")
                 self.flag=False
                 return  -1
             if  list(strs)[0] == '-':
@@ -32,16 +32,16 @@ class  Test:
                 return  0
             else:
                 if  not self.isNumber(list(strs)[0]):
-                    print  "不是数字"
+                    print("不是数字")
                     self.flag=False
                     return  -1
                 return  ord(list(strs)[0]) - ord('0')	
     def  strToint(self,s):
         self.flag=True
-        if  s==None or len(s)<=0 or (list(s)[0] =='-' and len(s) ==1):
-            print  "不是数字"
+        if  s==None or (len(s)==1 and not self.isNumber(s[0])) or (len(s)>1 and not self.isNumber(s[1])):
+            print("不是数字")
             self.flag=False
-            return  -1
+              
         if  list(s)[0] =='+':
             return  self.strtoint(s[1:len(s)],len(s)-1)
         else:
@@ -49,13 +49,13 @@ class  Test:
 
 if  __name__=="__main__":
     t=Test()
-    s = "-543"
-    print  t.strToint(s)
+    s = "-"
+    print(t.strToint(s))
     s = "543"
-    print  t.strToint(s)
+    print(t.strToint(s))
     s = "+543"
-    print  t.strToint(s)
-    s = "++43"
+    print(t.strToint(s))
+    s = "+-43"
     result=t.strToint(s)
     if  t.getFlag() :
-        print  result
+        print(result)

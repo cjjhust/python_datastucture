@@ -21,26 +21,34 @@ class  LongestWord:
     def  isContain(self,strArray,word,length):
         lens = len(word)
         # 递归的结束条件，当字符串长度为0时，说明字符串已经遍历完了
-        if  lens == 0:
-            return  True
+        
         # 循环取字符串的所有前缀
         i=1
         while  i<=lens:
-            # 取到的子串为自己
-            if  i == length:
-                return  False
+            if i==length:
+                return False
+           
             strs = word[0:i]
+            print("@@",strs)
+           
             if  self.find(strArray, strs):
                 # 查找完字符串的前缀后，递归判断后面的子串能否由其他单词组成
-                if  self.isContain(strArray, word[i:], length):
+                #print("length",length)
+                if  i == len(word):
                     return  True
+                elif self.isContain(strArray, word[i:], length):
+                    print("in ++")
+                    return  True
+            elif i==length:  #取到的子串为自己
+                print("****",i)
+                return False
             i +=1
         return  False
     # 方法功能：找出能由数组中其他字符串组成的最长字符串 
     def  getLogestStr(self,strArray):
         # 对字符串由大到小排序
         strArray=sorted(strArray,key=len,reverse=True)
-        print  strArray
+        print(strArray)
         # 贪心地从最长的字符串开始判断
         i=0
         while  i<len(strArray):
@@ -51,11 +59,12 @@ class  LongestWord:
         return  None
 
 if  __name__=="__main__":
-    strArray=["test", "tester", "testertest", "testing", "apple", "seattle", "banana", "batting",
-          "ngcat", "batti", "bat", "testingtester", "testbattingcat" ]
+    #strArray=["test", "tester", "testertest", "testing", "apple", "seattle", "banana", "batting", \
+          #"ngcat", "batti", "bat", "testingtester" ,"testbattingcat"]
+    strArray=["abc","ab","c"]   
     lw =LongestWord()
     logestStr = lw.getLogestStr(strArray)
     if  logestStr != None:
-        print  "最长的字符串为：" + logestStr
+        print("最长的字符串为：" + logestStr)
     else:
-        print  "不存在这样的字符串"
+        print("不存在这样的字符串")

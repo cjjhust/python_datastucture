@@ -13,22 +13,23 @@ Created on Sat Nov 10 16:07:57 2018
 #使用字典
 def  findDup(array):
     if  None==array:
-		return  -1
+        return  -1
     lens=len(array)
     hashTable=dict()
     i=0
-    while  i <lens - 1 :
+    while  i <lens:
         hashTable[i]=0
         i +=1
     j=0
     while  j<lens:
-        if  hashTable[array[j]-1] == 0:
-             hashTable[array[j] - 1]=array[j] - 1
+        if  hashTable[array[j]] == 0:
+            #print(array[j])
+            hashTable[array[j]]=array[j]
         else:
-            return  array[i]
+            return  array[j]
         j +=1
     return  -1
 
 if  __name__=="__main__":
-    array= [1, 3, 4, 2, 5, 3 ]
-    print  findDup(array)
+    array= [1, 3, 4, 2, 5,1]
+    print(findDup(array))

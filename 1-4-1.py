@@ -6,7 +6,7 @@ Created on Sat Nov 10 12:25:54 2018
 """
 
 class  LNode:  
-    def  __new__(self,x):  
+    def  __init__(self,x):  
         self.data=x 
         self.next=None 
 
@@ -21,13 +21,18 @@ def  FindMiddleNode(head):
    fast = head # 遍历链表的时候每次向前走两步
    slow = head # 遍历链表的时候每次向前走一步
    slowPre=head
+   print("head=",head.data)
         # 当fast到链表尾时，slow恰好指向链表的中间结点
    while  fast is not None and fast.next is not None:
        slowPre=slow
        slow=slow.next
-       fast=fast.next.next	
+       fast=fast.next.next
+       if not(slow is None or fast is None):
+            print("slow=",slow.data)
+            print("fast=",fast.data)	
 		#把链表断开成两个独立的子链表
    slowPre.next=None
+   print("slowPre=",slowPre.data)
    return  slow
 
 """
@@ -61,6 +66,7 @@ def  Reorder(head):
    # 前半部分链表第一个结点
    cur1=head.next
    mid=FindMiddleNode(head.next)
+   print("mid=",mid.data)
    # 后半部分链表逆序后的第一个结点
    cur2=Reverse(mid)
    tmp=None
@@ -76,27 +82,27 @@ def  Reorder(head):
 
 if  __name__=="__main__":
    i=1
-   head=LNode()
+   head=LNode(0)
    head.next=None
    tmp=None
    cur=head	
      # 构造第一个链表
-   while  i <8 :		
-       tmp=LNode()
-       tmp.data=i
-       tmp.next=None
+   while  i <7 :		
+       tmp=LNode(i)
+       
+       
        cur.next=tmp
        cur=tmp
        i +=1	
 
-   print  "排序前： ",
+   print("排序前： ")
    cur=head.next
    while  cur!=None:
-       print  cur.data,
+       print (cur.data)
        cur=cur.next
    Reorder(head)
-   print  "\n排序后： ",
+   print("\n排序后： ")
    cur=head.next
    while  cur!=None:
-       print  cur.data,
+       print(cur.data)
        cur=cur.next

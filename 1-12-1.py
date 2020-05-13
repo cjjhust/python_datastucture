@@ -43,17 +43,19 @@ class  MergeList:
     # 把data插入到链表头
     def  insert(self,head_ref,data):
         new_node =Node(data)
+        print("****",head_ref)
         new_node.down = head_ref
         head_ref = new_node 
+        print("head_ref",head_ref.data,head_ref.right,head_ref.down)
         # 返回新的表头结点
         return  head_ref 
     def  printList(self):
         temp = self.head 
         while  temp != None:
-            print  temp.data, 
+            print(temp.data)
             temp = temp.down 
 
-        print  '\n'
+        print('\n')
 
 if  __name__=="__main__":
     L = MergeList() 
