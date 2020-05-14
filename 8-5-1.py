@@ -25,10 +25,10 @@ def  quick_sort(lists, left, right):
     return  lists
 
 if  __name__=="__main__":  
-    lists=[3,4,2,8,9,5,1]
-    print  '排序前序列为:',
+    lists=[8,3,9,7]
+    print('排序前序列为:')
     for  i  in  (lists):
-        print  i,
-    print  '\n排序后结果为:', 
-    for  i  in  (quick_sort(lists,0,len(lists)-1)):
-        print  i,
+        print(i)
+    print('\n排序后结果为:')
+    for  i  in  quick_sort(lists,0,len(lists)-1):
+        print (i)

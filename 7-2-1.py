@@ -13,7 +13,7 @@ import  random
 """
 def  getMaxNum(n):
     if  n<1:
-        print  "参数不合法"
+        print("参数不合法")
         return  
     a = [None]*n
     # 随机生成n个房间里金币的个数
@@ -30,7 +30,7 @@ def  getMaxNum(n):
         i +=1
     i=4
     while  i<n-1:
-        if  a[i]>max4: # 能拿到最多的金币
+        if  a[i]>max4 and a[i]==max(a): # 能拿到最多的金币
             return  True
         i +=1
     return  False # 不能拿到最多的金币
@@ -43,5 +43,5 @@ if  __name__=="__main__":
         if  getMaxNum(10):
             success +=1
         i +=1
-    print  success/monitorCount  
+    print(success/monitorCount)  
 

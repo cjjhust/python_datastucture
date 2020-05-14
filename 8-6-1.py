@@ -27,9 +27,9 @@ def  shell_sort(lists):
 
 if  __name__=="__main__":  
     lists=[3,4,2,8,9,5,1]
-    print  '排序前序列为:',
+    print('排序前序列为:')
     for  i  in  (lists):
-        print  i,
-    print  '\n排序后结果为:', 
+        print(i)
+    print('\n排序后结果为:') 
     for  i  in  (shell_sort(lists)):
-        print  i,
+        print (i)

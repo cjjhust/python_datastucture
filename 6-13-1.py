@@ -17,6 +17,6 @@ def  squareRoot(n,e):
 if  __name__=="__main__":
     n = 50
     e = 0.000001
-    print  str(n) + "的平方根为" + str(squareRoot(n,e))
+    print(str(n) + "的平方根为" + str(squareRoot(n,e)))
     n=4
-    print   str(n) + "的平方根为"+ str(squareRoot(n,e))
+    print(str(n) + "的平方根为"+ str(squareRoot(n,e)))

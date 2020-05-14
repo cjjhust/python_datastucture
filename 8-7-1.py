@@ -19,7 +19,7 @@ def  adjust_heap(lists, i, size):
             adjust_heap(lists, maxs, size)
 
 def  build_heap(lists, size):
-    for  i  in  range(0, (size/2))[::-1]:
+    for  i  in  range(0, int(size/2))[::-1]:
         adjust_heap(lists, i, size)
 
 def  heap_sort(lists):
@@ -30,12 +30,12 @@ def  heap_sort(lists):
         adjust_heap(lists, 0, i)
 
 if  __name__=="__main__":  
-    lists=[3,4,2,8,9,5,1]
-    print  '排序前序列为:',
+    lists=[3,4,2,8,9,5,1,0]
+    print('排序前序列为:')
     for  i  in  lists:
-        print  i,
-    print  '\n排序后结果为:', 
+        print(i)
+    print('\n排序后结果为:')
     heap_sort(lists)
     for  i  in  lists:
-        print  i,
+        print  (i)
 

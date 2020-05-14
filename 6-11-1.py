@@ -24,15 +24,15 @@ def  carry(num,pos):
 def  findMinNonDupNum(n):
     count=0 # 用来记录循环次数
     nChar=list(str(n+1))
-    ch=[None]*(len(nChar)+2)
+    ch=[None]*(len(nChar)+1)
     ch[0]='0'
-    ch[len(ch)-1]='0'
+
     i=0
     while  i<len(nChar):
         ch[i+1]=nChar[i]
         i +=1
     lens=len(ch)
-    i=lens-2 # 从右向左遍历
+    i=lens-1 # 从右向左遍历
     while  i>0:
         count +=1
         if  ch[i-1] ==ch[i]:
@@ -47,15 +47,16 @@ def  findMinNonDupNum(n):
                     ch[j]='1'
                 j +=1
             # 第i位加1后，可能会与第i+1位相等
-            i +=1
+            if i<lens-2:
+                i +=1
         else:
             i -=1
-    print  "循环次数为："+str(count)
+    print("循环次数为："+str(count))
     return  int(''.join(ch))
 
 if  __name__=="__main__":
-    print  findMinNonDupNum(23345)
-    print  findMinNonDupNum(1101010)
-    print  findMinNonDupNum(99010)
-    print  findMinNonDupNum(8989)
+    print(findMinNonDupNum(23345))
+    print(findMinNonDupNum(1101010))
+    print(findMinNonDupNum(99010))
+    print(findMinNonDupNum(8989))
 

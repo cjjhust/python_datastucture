@@ -34,4 +34,4 @@ def  getTop(data):
 
 if  __name__=="__main__": 
     data =[[29, 17, 14, 2, 1],[19, 17, 16, 15, 6],[30, 25, 20, 14, 5]]
-    print  getTop(data)
+    print(getTop(data))

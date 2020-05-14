@@ -3,5 +3,5 @@ class Test:
         self.i = i
 for i in range(10):
     t = Test(i)
-    #print(t.i)
+    print(t.i)
     print(hash(t), id(t))

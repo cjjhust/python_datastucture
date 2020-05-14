@@ -14,23 +14,23 @@ def  getAllCombination(sums,result,count):
         return    
     # 数字的组合满足和为sums的条件，打印出所有组合
     if  sums == 0:
-        print  "满足条件的组合：",
+        print("满足条件的组合：")
         i=0
         while  i<count:
-            print  result[i], 
+            print (result[i]) 
             i +=1
-        print  '\n'  
+        print  ('\n')  
         return    
     # 打印debug信息，为了便于理解
-    print  "----当前组合：",
+    print ("----当前组合：")
     i=0   
     while  i<count:
-        print  str(result[i]),
+        print (str(result[i]))
         i +=1
-    print  "----"
+    print ("----")
     # 确定组合中下一个取值
     i = ( 1 if  count == 0  else result[count - 1])  
-    print  "---"+"i="+str(i)+" count="+str(count)+"---"  # 打印debug信息，为了便于理解
+    print  ("---"+"i="+str(i)+" count="+str(count)+"---")  # 打印debug信息，为了便于理解
 
     while  i<=sums:
         result[count] = i
@@ -42,11 +42,11 @@ def  getAllCombination(sums,result,count):
 # 方法功能：找出和为n的所有整数的组合 
 def  showAllCombination(n):
     if  n<1:
-        print  "参数不满足要求"
+        print ("参数不满足要求")
         return
     result =[None]*n # 存储和为n的组合方式
     getAllCombination(n, result,0)
 
 if  __name__=="__main__": 
-    showAllCombination(4)  
+    showAllCombination(6)  
 
