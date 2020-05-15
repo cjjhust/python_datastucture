@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:08:18 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 #函数功能：判断str2是否为str1的子串 

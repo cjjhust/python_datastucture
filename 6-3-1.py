@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:19:03 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 方法功能：计算两个自然数的除法  

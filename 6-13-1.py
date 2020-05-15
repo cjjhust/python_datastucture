@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:33:46 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 获取n的平方根,e为精度要求

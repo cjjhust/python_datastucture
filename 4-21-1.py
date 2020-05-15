@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:26:33 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  Maze:

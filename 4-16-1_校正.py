@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:21:36 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  findWithBinary(array,data):

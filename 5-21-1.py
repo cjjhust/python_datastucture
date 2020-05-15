@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:14:34 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 判断字符c是否是中文字符，如果是返回True

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:31:44 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  countOne(n):

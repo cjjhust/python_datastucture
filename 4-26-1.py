@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:28:58 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  is_allocable(d,p):

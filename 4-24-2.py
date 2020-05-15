@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:28:23 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  sort(arr):

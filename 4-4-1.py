@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:11:55 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  getNum(arr):

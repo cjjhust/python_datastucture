@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:07:39 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  getLargestSub(src):

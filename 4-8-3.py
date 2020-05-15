@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:16:12 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  mins(a,b,c):

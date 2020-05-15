@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:23:49 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  maxCover(a,L):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:44:31 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 方法功能：去掉字符串中嵌套的括号 

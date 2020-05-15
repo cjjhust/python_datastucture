@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:13:54 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  findTop3(arr):

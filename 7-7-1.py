@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:37:35 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  factorIsOdd(a):

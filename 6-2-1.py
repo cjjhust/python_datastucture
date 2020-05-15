@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:18:16 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 判断n能否表示成2的n次方 

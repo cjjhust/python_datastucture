@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:39:30 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  quick_sort(lists, left, right):

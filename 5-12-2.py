@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:03:58 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  isDup(strs):

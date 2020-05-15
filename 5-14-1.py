@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:05:06 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  getMaxDupChar(s,startIndex,curMaxLen,maxLen):

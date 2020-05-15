@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:18:46 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 判断数字n的二进制数从右往左数第i位是否为1

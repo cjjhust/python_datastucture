@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:24:32 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  calculate(a,b):

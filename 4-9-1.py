@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:16:28 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  findMin(array):

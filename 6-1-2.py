@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:17:34 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  isPower(n):

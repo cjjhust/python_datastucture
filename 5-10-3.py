@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:02:15 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  Test:

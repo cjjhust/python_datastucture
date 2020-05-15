@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:44:09 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 对字符数组排序，使得小写字母在前，大写字母在后	

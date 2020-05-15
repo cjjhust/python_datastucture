@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:36:45 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  reverseStr(str):

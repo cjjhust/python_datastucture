@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:38:08 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  Stack:

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:33:22 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  power(d,n):

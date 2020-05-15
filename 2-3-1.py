@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:37:06 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # Python中没有栈的模块，所以先新建一个栈类

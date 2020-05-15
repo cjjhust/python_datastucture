@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:26:14 2018
 
-@author: Administrator
+@author: CJJ
 """
 #快慢指针法
 class  LNode:  

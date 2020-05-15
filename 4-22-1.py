@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:26:51 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  findCommon(ar1,ar2,ar3):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:03:30 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 判断字符串中是否有相同的字符 

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:39:50 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  shell_sort(lists):

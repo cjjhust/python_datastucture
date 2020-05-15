@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:11:15 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # python中可以使用列表来表示有序数组，因此示例代码中使用列表来表示有序数组。

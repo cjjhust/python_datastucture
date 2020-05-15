@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:30:44 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  searth(n):

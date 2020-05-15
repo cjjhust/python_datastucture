@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:26:10 2018
 
-@author: Administrator
+@author: CJJ
 """
 from pprint import pprint
 def  MatrixChainOrder (p,n):

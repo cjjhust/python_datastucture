@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:06:26 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  BiTNode:

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:17:07 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 判断一个自然数是否是某个数的平方

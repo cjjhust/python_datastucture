@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:39:46 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 from  collections  import  deque

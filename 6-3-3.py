@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:19:43 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  add(n1,n2):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:27:18 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 引申：如何将单链表向右旋转k个位置

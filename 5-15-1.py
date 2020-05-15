@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:05:38 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 函数功能：求字符串L的最长递增子串的长度 

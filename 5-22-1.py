@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:15:13 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  getRelativePath(path1,path2):

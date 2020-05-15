@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:27:39 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  MySet:

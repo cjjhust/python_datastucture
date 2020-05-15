@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:40:12 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  adjust_heap(lists, i, size):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:34:28 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  prints(n):

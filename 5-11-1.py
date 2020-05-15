@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:02:55 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 根据char_to_int规定的字符的大小关系比较两个字符的大小 

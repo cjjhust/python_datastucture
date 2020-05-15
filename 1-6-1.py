@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:28:36 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  LNode:  

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:38:49 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  bubble_sort(lists):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:19:02 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  rotateArr(arr):

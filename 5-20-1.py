@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:13:17 2018
 
-@author: Administrator
+@author: CJJ
 
 本方法失败，只能沿着边路退回起点
 """

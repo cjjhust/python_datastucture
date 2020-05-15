@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:30:02 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 交换字符数组下标为i和j对应的字符 

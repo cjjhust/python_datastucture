@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:09:42 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  findDup(array):

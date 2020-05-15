@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:36:16 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 import  random

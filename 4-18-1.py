@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:24:14 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  swap(arr,i,j):

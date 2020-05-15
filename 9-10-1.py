@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:41:22 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 import  heapq

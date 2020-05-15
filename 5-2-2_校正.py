@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:35:15 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  getMaxSubStr(s1,s2):

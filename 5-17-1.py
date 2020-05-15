@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:06:51 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 方法功能：求串中字典序最大的子序列 

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:04:23 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  LongestWord:

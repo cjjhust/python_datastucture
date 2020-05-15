@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:20:36 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  rightShift(arr,k):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:13:59 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  getMinPath(arr) :

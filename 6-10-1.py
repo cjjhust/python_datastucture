@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:31:23 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 判断n二进制码中1的个数

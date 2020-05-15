@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:04:37 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  FindParentNode(root,node1,node2):

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:15:11 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  maxs(a,b,c):

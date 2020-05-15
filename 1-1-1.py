@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:18:14 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  LNode:  
@@ -61,3 +61,4 @@ if  __name__=="__main__":
     while  cur != None:
          print(cur.data)
          cur = cur.next
+# -*- coding: utf-8 -*-

@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:37:26 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 #  引申：如何给栈排序

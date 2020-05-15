@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:17:13 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  maxSubArray(arr):

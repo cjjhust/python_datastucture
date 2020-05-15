@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:10:54 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  MaxMin:

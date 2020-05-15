@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:43:31 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def  isContain(s1,s2):

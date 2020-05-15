@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:38:34 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 # 模拟栈

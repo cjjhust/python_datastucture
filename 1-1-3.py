@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 12:22:17 2018
 
-@author: Administrator
+@author: CJJ
 """
 #插入法
 def  Reverse(head):

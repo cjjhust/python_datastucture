@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 16:14:28 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 def   minDistance(arr,num1,num2):

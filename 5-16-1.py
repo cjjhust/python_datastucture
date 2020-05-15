@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 10 17:06:00 2018
 
-@author: Administrator
+@author: CJJ
 """
 
 class  CommonSubString:
